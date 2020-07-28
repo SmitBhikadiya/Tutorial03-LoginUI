@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEE9EA"
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/login_logo"></ImageView>
+
+
+    <EditText
+        android:id="@+id/txt_email"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/editabletext"
+        android:drawableLeft="@drawable/loginperson"
+        android:drawablePadding="10dp"
+        android:hint="Enter Username"
+        android:paddingLeft="10dp"
+        android:textColor="@color/logoTextcolor"
+        android:textColorHint="#C4448AFF"
+        android:textSize="22dp"></EditText>
+
+
+    <EditText
+        android:id="@+id/txt_password"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editabletext"
+        android:drawableLeft="@drawable/loginlock"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColor="@color/logoTextcolor"
+        android:textColorHint="#C4448AFF"
+        android:textSize="22dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="clip_horizontal|center|center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10sp"
+            android:layout_weight="1"
+            android:background="@drawable/editabletext"
+            android:onClick="varifyIt"
+            android:text="Signin"
+            android:textAllCaps="false"
+            android:textColor="@color/logoTextcolor"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/editabletext"
+            android:text="Signup"
+            android:textAllCaps="false"
+            android:textColor="@color/logoTextcolor"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="#006627"
+        android:drawableLeft="@drawable/google"
+        android:gravity="center|center_horizontal"
+        android:paddingLeft="10dp"
+        android:text="Signin with Google"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#3b5998"
+        android:drawableLeft="@drawable/facebook"
+        android:gravity="center|center_horizontal"
+        android:paddingLeft="10dp"
+        android:text="Sigin with Facebook"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="@string/right"
+        android:textColor="@android:color/background_light" />
+
+</LinearLayout>
