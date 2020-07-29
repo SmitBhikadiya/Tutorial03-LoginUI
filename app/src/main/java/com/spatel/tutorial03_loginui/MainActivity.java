@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity{
 
     public EditText email;
     public EditText password;
-    private Button signin;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity{
     }
 
     public void varifyIt(View view) {
-        //Log.i("tag",email.getText().toString());
         if (email.getText().toString().equals("admin@gmail.com")) {
             //Log.i("tag",password.getText().toString());
             if (password.getText().toString().equals("admin")) {
